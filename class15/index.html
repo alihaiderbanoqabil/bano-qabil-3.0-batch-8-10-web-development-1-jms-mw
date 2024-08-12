@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 15</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      button:hover {
+        /* transform: rotate(90deg); */
+        /* transform: translate(200px, 500px); */
+        /* transform: scale(2, 3); */
+      }
+      body {
+        background-color: lightgreen;
+      }
+
+      @media (width <= 800px) {
+        body {
+          background-color: rgb(230, 182, 173);
+        }
+      }
+      @media (400px <= width <= 600px) {
+        body {
+          background-color: lightblue;
+        }
+        #paragraph {
+          font-weight: bold;
+          font-size: 5rem;
+        }
+      }
+
+      /* @media (max-width: 600px) and (min-width: 400px) {
+        body {
+          background-color: lightblue;
+        }
+        #paragraph {
+          font-weight: bold;
+          font-size: 5rem;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- topics that we will cover in today's class  -->
+    <!-- transform
+      media query
+      grid
+      grdient -->
+
+    <p id="paragraph">
+      Resize the browser window. When the width of this document is 600 pixels
+      or less, the background-color is "lightblue", otherwise it is
+      "lightgreen".
+    </p>
+    <button>Submit</button>
+  </body>
+</html>
