@@ -1,4 +1,4 @@
-console.log("Class 3 od JS");
+console.log("Class 3 of JS");
 
 let string1 = `stringkjfslkjfsdlkjkljfd
 
