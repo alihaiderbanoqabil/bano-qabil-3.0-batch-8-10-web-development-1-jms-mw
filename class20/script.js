@@ -214,12 +214,12 @@ let mixedValue = [
 // const std2Gender = "std2Gender";
 // const std2Age = 20;
 
+
 const car = {
   type: "Fiat",
   model: "500",
   color: "white",
 };
-
 const student1Info = {
   gender: "male",
   "full name": "ali",
