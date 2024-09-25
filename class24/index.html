@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 24 (Class 8 of JS)</title>
+</head>
+
+<body>
+    <h1>Class 24 (Class 8 of JS)</h1>
+    <script>
+        const posts = [
+            {
+                "userId": 1,
+                "id": 1,
+                "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+                "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+            },
+            {
+                "userId": 1,
+                "id": 2,
+                "title": "qui est esse",
+                "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+            },
+            {
+                "userId": 1,
+                "id": 3,
+                "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+                "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+            },
+            {
+                "userId": 1,
+                "id": 4,
+                "title": "eum et est occaecati",
+                "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+            },
+            {
+                "userId": 1,
+                "id": 5,
+                "title": "nesciunt quas odio",
+                "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+            },
+            {
+                "userId": 1,
+                "id": 6,
+                "title": "dolorem eum magni eos aperiam quia",
+                "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+            },
+            {
+                "userId": 1,
+                "id": 7,
+                "title": "magnam facilis autem",
+                "body": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+            },
+            {
+                "userId": 1,
+                "id": 8,
+                "title": "dolorem dolore est ipsam",
+                "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
+            },
+            {
+                "userId": 1,
+                "id": 9,
+                "title": "nesciunt iure omnis dolorem tempora et accusantium",
+                "body": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
+            },
+            {
+                "userId": 1,
+                "id": 10,
+                "title": "optio molestias id quia eum",
+                "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
+            },
+        ]
+        console.log('Class 24 (Class 8 of JS)');
+
+        // Create an Array
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        // Create an Iterator
+        // const list = fruits.entries();
+        // console.log(list);
+
+        // for (const element of list) {
+        //     console.log(element[0], element[1]);
+        // }
+
+
+        // Create an Array
+        // const ages = [12, 33, 14, 40];
+        // console.log(ages);
+
+        // // Create a Test Function
+        // function checkAge(age) {
+        //     return age > 18;
+        // }
+
+        // // Create a Test Function
+        // function checkAge(element, index, array) {
+        //     return element > 18;
+        // }
+        // Create a Test Function
+        const checkAge = (element, index, array) => {
+            // console.log(element, index, array);
+
+            return element > 18;
+        }
+
+        // Are all ages over 18?
+        // const result = ages.every(checkAge);
+        // const result = ages.every((element, index, array) => {
+        //     console.log(element, index, array);
+
+        //     return element > 18;
+        // });
+        // const result = ages.some((element, index, array) => {
+        //     console.log(element, index, array);
+
+        //     return element > 18;
+        // });
+        // console.log(result);
+
+
+        // console.log(fruits.fill("Kiwi", 1));
+        // console.log(fruits.fill("Kiwi", 1, 2));
+
+        // const ages = [32, 33, 16, 40];
+        // const result = ages.filter(checkAdult);
+        // const result = posts.filter((post, index, array) => {
+        //     console.log(post, index, array);
+        //     if (post.id === 5) {
+        //         return true
+        //     }
+        //     return false;
+        // });
+        // const result = posts.filter((post, index, array) => {
+        //     console.log(post, index, array);
+        //     return post.id === 5 && post.title.length > 15;
+        // });
+        // const result = posts.find((post, index, array) => {
+        //     console.log(post, index, array);
+        //     return post.id === 5 && post.title.length > 30;
+        // });
+        // const result = posts.find((post, index, array) => {
+        //     console.log(post, index, array);
+        //     if (post.id === 5) {
+        //         return true
+        //     }
+        //     return false;
+        // });
+        // const result = posts.filter((post, index, array) => {
+        //     console.log(post, index, array);
+        //     if (post.id > 5) {
+        //         return true
+        //     }
+        //     return false;
+        // });
+        // const result = ages.find(checkAdult);
+
+        // function checkAdult(age, index, array) {
+        //     console.log(age, index, array);
+
+        //     return age >= 18;
+        // }
+
+        function checkAdult(age, index, array) {
+            console.log(age, index, array);
+            if (age >= 18) {
+                return true
+            }
+            return false;
+        }
+        // console.log(result);
+        const ages = [32, 33, 16, 40];
+
+        // const result = ages.map((age, index, array) => {
+        //     console.log(age, index, array);
+        //     return { age: age };
+        // });
+        // const numbers = [4, 9, 16, 25];
+        // const newArr = numbers.map((number, index, array) => Math.sqrt(number))
+        // const newArr = numbers.map(Math.sqrt)
+        // const newArr = numbers.map((number, index, array) => {
+        // const newArr = numbers.map((number, index, array) => {
+        //     return number * 20
+        // })
+        // const newArr = numbers.findIndex((number, index, array) => {
+        //     return number > 20
+        // })
+        // const newArr = numbers.findLast((number, index, array) => {
+        //     return number > 10
+        // })
+
+        // const myArr = [1, 2, 3, 4, 5, 6];
+        // const newArr1 = myArr.flatMap(x => [x, x * 10]);
+        // const newArr2 = myArr.map(x => [x, x * 10]);
+        // const newArr3 = myArr.map(x => [x, x * 10]).flat();
+        // console.log(newArr1);
+        // console.log(newArr2);
+        // console.log(newArr2.flat());
+        // console.log(newArr3);
+
+        // const fruits = ["apple", "orange", "cherry"];
+        // const result = fruits.forEach((element, index, array) => {
+        //     console.log(element, index, array);
+        //     return element;
+        // });
+        // const result = posts.forEach((element, index, array) => {
+        //     console.log(element, index, array);
+        //     element.body = "body";
+        //     return element;
+        // });
+        // console.log(result);
+
+        // const result = posts.map((element, index, array) => {
+        //     console.log(element, index, array);
+        //     element.body = "body";
+        //     return element;
+        // });
+        // console.log(posts);
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // console.log(fruits.includes("mango"));
+        // console.log(fruits.includes("Mango"));
+        //         const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        //         let result = Array.isArray(fruits);
+        // console.log(result);
+
+        // let text = "W3Schools";
+        // let result = Array.isArray(text);
+        // console.log(result);
+
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // let index = fruits.indexOf("Mango");
+        // console.log(index);
+        // Create an Array
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        // // Create an Iterable
+        // const list = fruits.keys();
+        // console.log(list);
+        // let text = ""
+        // for (let x of list) {
+        //     text += x + "<br>";
+        // }
+        // document.write(text)
+        // console.log(text);
+
+
+        // const fruits = ["Orange", "Apple", "Mango", "Apple", "Banana", "Apple"];
+        // let index = fruits.indexOf("Apple");
+
+        // console.log(index);
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // // fruits.reverse();
+
+        // console.log(fruits);
+
+        // Create an Array
+
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // Sort the Array
+        // fruits.sort();
+        // fruits.sort().reverse();
+        // console.log(fruits);
+        // const numbers = [16, 4, 25, 9,];
+        // // const numbers = [1, 4, 2, 9,];
+
+        // // numbers.sort();
+        // // numbers.sort(function (a, b) { return a - b })
+        // numbers.sort(function (a, b) { return b - a })
+        // console.log(numbers);
+
+
+
+        const numbers = [16, 4, 25, 9,];
+        // let sum = 0;
+        // for (let index = 0; index < numbers.length; index++) {
+        //     const element = numbers[index];
+        //     sum = sum + element
+        // }
+        // console.log(sum);
+        // let sum = 0;
+        // for (const element of numbers) {
+        //     sum = sum + element
+        // }
+        // console.log(sum);
+        // const sum = numbers.reduce((previousValue, currentValue, currentIndex, array) => {
+        //     console.log(previousValue, currentValue, currentIndex, array);
+        //     return previousValue + currentValue
+        // }, 0)
+        const sum = numbers.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
+        console.log(sum);
+
+    </script>
+</body>
+
+</html>
