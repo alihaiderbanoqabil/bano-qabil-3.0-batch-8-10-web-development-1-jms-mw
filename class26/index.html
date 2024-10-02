@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 26 (Class 10 of JS)</title>
+</head>
+
+<body>
+    <h1>Class 26 (Class 10 of JS)</h1>
+    <!-- <script> -->
+    <script type="module">
+        import { user as importedUser, age } from "./person.js";
+        // import message from "./person.js";
+        import msg from "./person.js";
+        // console.log(importedUser);
+        // console.log(message("ali"));
+        // console.log(msg("ali"));
+
+        console.log("Class 26 (Class 10 of JS)", age);
+        // const obj = {
+        //     firstName: "John",
+        //     lastName: "Doe",
+        //     age: 50,
+        //     eyeColor: "blue",
+        //     nested: {
+        //         firstName: "Ali",
+        //         lastName: "Doe",
+        //         age: 50,
+        //         eyeColor: "red",
+        //         nested: {
+        //             firstName: "John",
+        //             lastName: "Doe",
+        //             age: 100,
+        //             eyeColor: "yellow",
+        //         }
+        //     }
+        // }
+
+        // const array = ['ali', 'haider', 'hasnain']
+        // console.log(obj.firstName);
+        // // console.log(obj.info.street.zipCode);
+        // // console.log(obj?.info?.street?.zipCode);
+        // console.log(obj.info?.street?.zipCode);
+        // // console.log(obj.info && obj.info.street && obj.info.street.zipCode);
+
+        // console.log(obj.nested.firstName);
+
+        // Nullish coalescing operator (??) 
+        // let name;
+        // // if (name === undefined) {
+        // if (!name) {
+        //     name = 'defalt'
+        // }
+        // let name = 'ali';
+        // // if (name === undefined) {
+        // if (!name) {
+        //     name = 'defalt'
+        // }
+
+        // console.log(name);
+
+
+        // const foo = null ?? 'default string';
+        // console.log(foo);
+
+        // const baz = undefined ?? 42;
+        // console.log(baz);
+
+        // const foo = false || 'default string';
+        // console.log(foo);
+        // const foo ='ali' || 'default string';
+        // console.log(foo);
+
+        // const baz = undefined || 42;
+        // console.log(baz);
+
+        // const copiedObj = obj;
+        // copiedObj.age = 100
+        // console.log(copiedObj);
+        // console.log(obj);
+
+
+        // spread operator 
+        // const shallowCopyObj = { ...obj }
+        // const shallowCopyObj = {obj}
+        // const shallowCopyObj = {obj:obj}
+        // const shallowCopyArray = [array]
+        // const shallowCopyArray = [...array]
+        // console.log(shallowCopyObj);
+        // console.log(shallowCopyArray);
+
+        // destructuring of array and Object in JS  
+        // console.log(obj.nested.nested.eyeColor);
+        // console.log(obj.nested.nested.age);
+
+        // const eyeColor = obj.nested.nested.eyeColor
+        // const age = obj.nested.nested.age
+
+        const user = {
+            "id": 1,
+            "name": "Leanne Graham",
+            "username": "Bret",
+            "email": "Sincere@april.biz",
+            "address": {
+                "street": "Kulas Light",
+                "suite": "Apt. 556",
+                "city": "Gwenborough",
+                "zipcode": "92998-3874",
+                "geo": {
+                    "lat": "-37.3159",
+                    "lng": "81.1496"
+                }
+            },
+            "phone": "1-770-736-8031 x56442",
+            "website": "hildegard.org",
+            "company": {
+                "name": "Romaguera-Crona",
+                "catchPhrase": "Multi-layered client-server neural-net",
+                "bs": "harness real-time e-markets"
+            }
+        }
+        const names = ['ali', 'haider', 'hasnain']
+        const marks = [50, 60, 100]
+
+        // const lng = user.address.geo.lng
+        // const lat = user.address.geo.lat
+        // console.log(user.address.geo.lng);
+
+        // const {
+        //     id,
+        //     name,
+        //     username,
+        //     email,
+        //     address: {
+        //         street,
+        //         suite,
+        //         city,
+        //         zipcode,
+        //         geo: {
+        //             lat,
+        //             lng
+        //         }, geo
+        //     },
+        //     address,
+        //     phone,
+        //     website,
+        //     company: {
+        //         name: companyName,
+        //         catchPhrase,
+        //         bs
+        //     }
+        // } = user;
+        // console.log(bs);
+        // console.log(companyName);
+        // console.log(address);
+        // console.log(lng);
+        // console.log(lat);
+        // console.log(geo);
+
+        // const haiderMarks = marks[1]
+        // console.log(haiderMarks);
+        // console.log(marks[2]);
+
+        // const [aliMarks, haiderMarks, hasnainMarks] = marks
+        // console.log(aliMarks);
+        // console.log(hasnainMarks);
+
+        // rest operator in JS 
+
+        // const { id, name,
+        //     address, ...remainingUserKeys } = user
+        // console.log(remainingUserKeys);
+
+        // const [aliMarks, ...remainingStudentMarks] = marks
+        // console.log(remainingStudentMarks);
+
+
+        // math object in JS 
+
+        // console.log(Math);
+
+        // console.log(Math.PI);
+        // console.log(Math.random());
+        // console.log(Math.random() * 100);
+        // console.log(Math.random() * 1000);
+        // console.log(Math.abs(-100));
+
+        // console.log(Math.floor(4.9));
+        // console.log(Math.floor(4.7));
+        // console.log(Math.floor(4.4));
+        // console.log(Math.floor(4.2));
+        // console.log(Math.floor(-4.2));
+
+        // console.log(Math.ceil(4.9));
+        // console.log(Math.ceil(4.7));
+        // console.log(Math.ceil(4.4));
+        // console.log(Math.ceil(4.2));
+
+        // console.log(Math.pow(3, 3));
+        // console.log(Math.pow(3, 3));
+        // console.log(Math.sqrt(64));
+
+        // console.log(Math.round(4.6));
+        // console.log(Math.round(4.4));
+
+
+        // console.log(Math.min(0, 150, 30, 20, -8, -200));
+        // console.log(Math.max(0, 150, 30, 20, -8, -200));
+
+
+
+        // const currentDate = new Date();
+        const currentDate = new Date("2021-03-25");
+        // console.log(currentDate);
+        // console.log(currentDate.getFullYear());
+        // console.log(currentDate.getMonth());
+        // console.log(currentDate.getDay());
+        // console.log(currentDate.getDate());
+        // console.log(currentDate.getHours());
+        // console.log(currentDate.getMinutes());
+        // console.log(currentDate.getSeconds());
+        // console.log(currentDate.getMilliseconds());
+        // console.log(currentDate.getTime());
+        // console.log(`${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}`);
+        // console.log(currentDate.toDateString());
+        // console.log(currentDate.toISOString());
+        // console.log(currentDate.toTimeString());
+        // console.log(currentDate.toUTCString());
+        console.log(currentDate.getTime());
+        console.log(new Date(currentDate.getTime()));
+
+        // const d = new Date();
+        // console.log(d);
+        
+        // d.setFullYear(2020);
+        // d.setMonth(11);
+        
+        // console.log(d);
+    </script>
+</body>
+
+</html>
